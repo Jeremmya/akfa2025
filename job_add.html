@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Job</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .job-container {
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .job-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .job-container label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .job-container select,
+        .job-container input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .job-container button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .job-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="job-container">
+        <h2>Add Job Description</h2>
+        
+        <label for="jobType">Job Type:</label>
+        <select id="jobType">
+            <option value="Офис">Офис</option>
+            <option value="Обьект">Обьект</option>
+        </select>
+
+        <label for="constructionName">Обьект Строительства:</label>
+        <input type="text" id="constructionName" placeholder="Enter place name">
+
+        <label for="jobDescription">Job Description:</label>
+        <input type="text" id="jobDescription" placeholder="Enter job name">
+
+        <button>Submit</button>
+    </div>
+</body>
+</html>
